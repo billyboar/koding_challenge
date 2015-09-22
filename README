@@ -1,0 +1,21 @@
+KODING CHALLENGE
+
+change your configs at configs/config.json
+
+Please run the following sql code.
+
+CREATE DATABASE koding_challenge
+  WITH OWNER = postgres
+       ENCODING = 'UTF8'
+       TABLESPACE = pg_default
+       LC_COLLATE = 'C'
+       LC_CTYPE = 'C'
+       CONNECTION LIMIT = -1;
+
+CREATE TABLE accounts
+(
+  username character varying(100) NOT NULL,
+  count integer,
+  metric character varying(100) NOT NULL,
+  "timestamp" timestamp without time zone DEFAULT timezone('utc'::text, now())
+)

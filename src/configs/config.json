@@ -1,0 +1,10 @@
+{
+	"postgres": {
+		"name": "koding_challenge",
+		"username" : "postgres",
+		"password": ""
+	},
+	"redis": {
+		"port": "6379"
+	}
+}
